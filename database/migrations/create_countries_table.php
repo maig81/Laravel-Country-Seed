@@ -13,7 +13,7 @@ class CreateCountriesTable extends Migration {
 	{
 		Schema::create('countries', function($table) {
 			$table->increments('id');
-			$table->string('code');
+			$table->string('code', 2);
 			$table->string('name');
 		});
 	}
